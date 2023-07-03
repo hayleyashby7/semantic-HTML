@@ -1,1 +1,1 @@
-# accessibility and semantic HTMl assignment
+# Accessibility & Semantic HTML assignment
