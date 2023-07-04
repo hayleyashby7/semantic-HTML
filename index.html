@@ -25,6 +25,7 @@
 				<li class="nav-link"><a href="#">Jobs</a></li>
 			</ul>
 		</nav>
+
 		<section>
 			<h4>Preferences</h4>
 			<p>We aim to make this site accessible to a wide audience and to ensure a great experience for all users by
@@ -34,13 +35,20 @@
 				some
 				of its functionalities.
 			</p>
-			<form>
-				<fieldset>
-					<legend>Allow flashing elements</legend>
-					<label>Untick this to disable flashing and moving elements<input type="checkbox"></label>
-				</fieldset>
-			</form>
+			<button onclick="window.preferences.showModal();">Open Accessibility Options</button>
+			<dialog id="preferences">
+				<form method="dialog">
+					<fieldset>
+						<legend>Accesibility</legend>
+						<label for="allow-flash">Allow flashing elements</label><input id="allow-flash" type="checkbox"
+							checked>Untick this to disable
+						flashing and moving elements
+					</fieldset>
+					<button>Close</button>
+				</form>
+			</dialog>
 		</section>
+
 		<article>
 			<h1>Accessibility Features: Easy Wins</h1>
 			<h2>Handy tips on how to create accessible websites for everyone</h2>
